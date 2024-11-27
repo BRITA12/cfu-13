@@ -1,0 +1,43 @@
+#Brithany Sanchez
+#period 1-2
+#11/26/2024
+
+import simplegui
+
+def draw_handler(canvas):
+    #all drawing happens here
+    #canvas.draw_point([x,y]). "color")
+    
+    #left eye
+    canvas.draw_point([70,80], "white")
+    canvas.draw_point([75,75], "white")
+    canvas.draw_point([80,80], "white")
+    canvas.draw_point([75,85], "white")
+    
+    #right eye
+    canvas.draw_point([130,80], "white")
+    canvas.draw_point([125,75], "white")
+    canvas.draw_point([120,80], "white")
+    canvas.draw_point([125,85], "white")
+    
+    #nose
+    canvas.draw_point([100,110], "white")
+    canvas.draw_point([95,120], "white")
+    canvas.draw_point([105,120], "white")
+    
+    #mouth
+    canvas.draw_point([60,130], "white")
+    canvas.draw_point([70,135], "white")
+    canvas.draw_point([85,140], "white")
+    canvas.draw_point([100,140], "white")
+    canvas.draw_point([115,140], "white")
+    canvas.draw_point([130,135], "white")
+    canvas.draw_point([140,130], "white")
+    
+#library.create_frame(title, width, height)
+
+frame = simplegui.create_frame("CFU13 Happy Dots",200,200)
+frame.set_canvas_background("rgb(208, 80, 133)")
+frame.set_draw_handler(draw_handler)
+frame.start()
+                    
